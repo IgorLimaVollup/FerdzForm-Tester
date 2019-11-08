@@ -1,0 +1,27 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "jquery-3.0.0.min.js", "trash.js", "bootstrap.min.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "page.html",
+      "default_title": "FerdzForm Tester"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery-3.0.0.min.js", "trash.js", "bootstrap.min.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "FerdzformTester",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "48": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoSqW0nQqAlRd9dyKRGh4pNU0SWTGqTDVpnZRdjvWKCAF4KBjI4PdGW8/T+bDJSlZ1RkzQ2dKxv1iEFfWJy5PE3P20DIGDYhD8fvFolaHJfLHm3ziP8UF6YIe1FP0a4rDTc1nZrfTLfmt6/HJOO655cT7Pa0TYLlfm/NL1gOAvDXWH3tygNOJv1Jk/HtrOjMqpvbS6N7ra/6ceEDbaFPEW4x9QaZQTlX36oZZdvwPMATkCS9IvwqhWItQoWLQgPd86KDqZ+ngUO0ooFHFZ6P7Ar0tMnhbPb+3udz0xBZCy8DDXukhYgpv9umpKjYQiS3bgEtCL9vAxFwuLaUljbwUDQIDAQAB",
+   "manifest_version": 2,
+   "name": "FerdzformTester",
+   "permissions": [ "contextMenus", "tabs", "http://*/*", "https://*/*", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2"
+}
